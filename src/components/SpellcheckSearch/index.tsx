@@ -32,7 +32,7 @@ const SpellcheckSearch = ({ actionType }: IProps) => {
       SpellcheckService.getSpellcheck(String(word))
         .then((response) => {
           if (response.correct) {
-            toast.success("The word is is found and correct.");
+            toast.success("The word is found and correct.");
           } else {
             setSuggestions(response.suggestions);
             setShowModal(true);
