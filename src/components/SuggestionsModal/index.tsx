@@ -2,7 +2,7 @@ import { Modal } from "react-bootstrap";
 import CustomButton from "../common/CustomButton";
 import { IProps } from "./IProps";
 
-const CustomModal = ({ show, onHide, onConfirm, title, message }: IProps) => {
+const SuggestionsModal = ({ show, onHide, onConfirm, title, message }: IProps) => {
   return (
     <Modal show={show} onHide={onHide} centered>
       <Modal.Header closeButton>
@@ -21,4 +21,4 @@ const CustomModal = ({ show, onHide, onConfirm, title, message }: IProps) => {
   );
 };
 
-export default CustomModal;
+export default SuggestionsModal;

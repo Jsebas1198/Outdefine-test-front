@@ -6,7 +6,7 @@ import { images } from "../../constants/images";
 import { IProps } from "./IProps";
 import CustomButton from "../common/CustomButton";
 import SpellcheckService from "../../services/SpellcheckService";
-import CustomModal from "../CustomModal";
+import SuggestionsModal from "../SuggestionsModal";
 import { ISearchFormData } from "./ISearchFormData";
 
 const SpellcheckSearch = ({ actionType }: IProps) => {
@@ -31,7 +31,6 @@ const SpellcheckSearch = ({ actionType }: IProps) => {
     if (actionType === "search") {
       SpellcheckService.getSpellcheck(String(word))
         .then((response) => {
-          
           if (response.correct) {
             toast.success("The word is is found and correct.");
           } else {
@@ -104,7 +103,7 @@ const SpellcheckSearch = ({ actionType }: IProps) => {
           </div>
         </div>
       </div>
-      <CustomModal
+      <SuggestionsModal
         show={showModal}
         onHide={handleModalClose}
         onConfirm={() => setShowModal(false)}
