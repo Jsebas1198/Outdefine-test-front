@@ -1,13 +1,7 @@
+import SpellcheckSearch from "../../components/SpellcheckSearch";
+
 const MainPage = () => {
-  return (
-    <>
-      <header></header>
-      <main>
-        <div>
-        </div>
-      </main>
-    </>
-  );
+  return <SpellcheckSearch actionType={"search"} />;
 };
 
 export default MainPage;
