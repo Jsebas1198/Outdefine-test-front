@@ -1,4 +1,4 @@
-export interface IGetSpellcheckResponse {
+export interface ISpellcheck {
   suggestions: string[];
   correct: boolean;
 }

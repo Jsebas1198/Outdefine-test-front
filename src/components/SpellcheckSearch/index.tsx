@@ -31,11 +31,11 @@ const SpellcheckSearch = ({ actionType }: IProps) => {
     if (actionType === "search") {
       SpellcheckService.getSpellcheck(String(word))
         .then((response) => {
-          const responseData = response.data;
-          if (responseData.correct) {
+          
+          if (response.correct) {
             toast.success("The word is is found and correct.");
           } else {
-            setSuggestions(responseData.suggestions);
+            setSuggestions(response.suggestions);
             setShowModal(true);
           }
         })
