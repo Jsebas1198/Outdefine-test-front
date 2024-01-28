@@ -4,10 +4,10 @@ import MSpellcheck from "../models/MSpellcheck";
 
 export default class SpellcheckService {
   /**
-   * Retrieves spellcheck for a given word.
+   * Asynchronously retrieves spellcheck data for a given word.
    *
-   * @param {string} word - the word to spellcheck
-   * @return {Promise<AxiosResponse<ISpellcheck>>} the spellcheck response
+   * @param {string} word - the word to perform spellcheck on
+   * @return {Promise<MSpellcheck>} the spellcheck data wrapped in a Promise
    */
   public static async getSpellcheck(word: string): Promise<MSpellcheck> {
     try {
