@@ -2,7 +2,7 @@
 
 This application is developed using React version 18.2.
 
-**Deployed Project Link:** https://main--eclectic-smakager-b1299b.netlify.app/
+**Deployed Project Link:** https://dashing-seahorse-5970ea.netlify.app
 
 **Note:** The image used in this project was generated using artificial intelligence.
 
